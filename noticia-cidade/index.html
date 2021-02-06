@@ -13,10 +13,8 @@
 
 		}
 		#container {
-			width: 700px;
+			width: 750px;
 			margin: 0 auto;
-			
-			
 		}
 		#topo {
 			height: 150px;
@@ -70,9 +68,88 @@
 			background: #de003e;
 			cursor: text;
 		}
+
+		#conteudo {
+			margin-top: 60px;
+			
+		}
+		#secundario {
+			width: 270px;
+			background: grey;
+			float: left;
+			margin: 0 0 20px 15px;
+		
+		}
+		#tres-colunas #primario {
+			width: 270px;
+			background: green;
+			float: left;
+			margin: 0 0 20px 195px;
+		}
+		#uma-coluna #primario {
+			width: 750px;
+			margin: 0 0 20px 0;
+		}
+		#duas-colunas #primario {
+			width: 555px;
+		
+		}
+		#lateral {
+			width: 180px;
+			float: left;
+			margin: 0 0 20px -750px; 
+		}
+		#lateral h3  {
+			background: #294c71;
+			color: #fff;
+			margin-bottom: 20px;
+			padding: 5px;
+		}
+		#lateral ul a {
+			font-size: 0.9em;
+			color: black;
+			text-decoration: none;
+			padding: 3px;
+			display: block;
+			line-height: 15px;
+		}
+		#lateral ul a:hover {
+			color: grey;
+			padding-left: 20px; 
+			background: url(imagens/marcador.png) no-repeat left center;
+		}
+		#rodape {
+			background: #294c71;
+			padding: 20px;
+		}
+		#rodape2 {
+			width: 750px;
+			margin: 0 auto;
+			padding: 10px;
+			color: #fff;
+		}
+		label {
+			display: block;
+			cursor: pointer;
+		}
+		input {
+			width: 125px;
+			padding: 5px;
+			font-size: 0.9em;
+			background-color: #fff;
+		}
+		input.submit {
+			width: 80px;
+			color: #fff;
+			background-color: #b10333;
+			border: 2px solid #870529;
+		}
+		.teste {
+			margin-top: 20px;
+		}
 	</style>
 </head>
-<body class="home">
+<body id="tres-colunas" class="home">
 		<div id="container">
 			<div id="topo">
 				<h1 class="logo">Notícias cidade</h1>
@@ -86,9 +163,46 @@
 					<li><a id="fotos" href="home.html">Fotos</a></li>
 				</ul>
 			</div>
-		</div>
 
+			<div id="conteudo">
+				<div id="primario">primario</div>
+				<div id="secundario">secundario</div>
+				<div id="lateral">
+					<h3>Entrevistas</h3>
 
+					<ul>
+						<li><a href="Misael.html">Misael</a></li><br>
+						<li><a href="Teste">Misael</a></li><br>
+						<li><a href="">Misael Fernando</a></li><br>
+						<li><a href="">Misael Orelio</a></li><br>
+						<li><a href="">Misael Souza</a></li><br>
+						<li><a href="">Misael Benedito</a></li><br>
+						<li><a href="">Misael Junior</a></li><br>
+						<li><a href="">Misael Renildo</a></li><br>
+						<li><a href="">Misael Pereira</a></li><br>
+					</ul>
+					<div class="teste">
+						<h3>News Post</h3>
+						<form>
+							<div>
+								<label for="email">Email:</label>
+								<input type="text" name="email" id="email" placeholder="E-mail">
+							</div>
+							<div>
+								<input class="submit" type="submit" value="Cadastrar">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div><!-- Fim conteudo-->
+			
+		</div><!-- Fim container-->
+
+			<div id="rodape" style="clear: both;">
+				<div id="rodape2">
+					&copy; Copyright 2000-2018 Notícias cidade
+				</div>
+			</div>
 
 
 
